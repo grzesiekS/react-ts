@@ -15,6 +15,9 @@ const App: React.FC = () => (
             lastName: 'Swieboda'
           }
         }
+        handleChange={e => {
+          console.log(e.target.value);
+        }}
       />
   </div>
 );
