@@ -4,6 +4,7 @@ import TextField from './components/TextField/TextField';
 import ReducerExample from './components/ReducerExample/ReducerExample';
 
 import './App.css';
+import { Counter } from './components/Counter/Counter';
 
 const App: React.FC = () => (
   <div className="App">
@@ -21,6 +22,15 @@ const App: React.FC = () => (
         }}
       />
       <ReducerExample />
+      <Counter>
+        {(count, setCount) => (
+          <div>
+            {count}
+            <button
+              onClick={() => setCount(count + 1)}
+            >+</button>
+          </div>)}
+      </Counter>
   </div>
 );
 
