@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TextField from './components/TextField/TextField';
+import ReducerExample from './components/ReducerExample/ReducerExample';
 
 import './App.css';
 
@@ -19,6 +20,7 @@ const App: React.FC = () => (
           console.log(e.target.value);
         }}
       />
+      <ReducerExample />
   </div>
 );
 
